@@ -82,3 +82,59 @@ for elem in arr:
   
 # output -> 2, 4, 6, 0, 10
 ```
+
+## Lists
+The list is most versatile data type available in Python, which can be written as a list of comma-separated values between square brackets. The most important thing about a list is that elements need not be of the same datatype.
+
+```
+# example
+list1 = ["Physics", "Chemistry", "Maths"]
+list2 = [1, 2, 3, "a", "b"]
+```
+
+Similar to string indices, list indices start from 0 and can be sliced, concatenated and so on.
+
+### Accessing Values
+To access elements in a list, use the square bracket for slicing and the index or indices to obtain value available at that index.
+
+```
+list1 = [1, 2, 3, 4, 5]
+
+print(list1[3]) # 4
+print(list1[-1]) # 5
+print(list1[:3]) # [1, 2, 3]
+```
+
+### Updating List Elements
+You can update single or multiple elements of list by giving the slice on the left hand side of the assignment operator and you can add to the list using the .append() method.
+
+```
+list1 = [1, 2, "a", { "a": 3 }, 4]
+
+list1[1] = 10
+list1[-1] = 3
+list1.append(6)
+
+print(list1) # [1, 10, "a", { "a": 3 }, 3, 6]
+```
+
+### Deleting List Elements
+To remove an element from a list, you can use the `del` keyword or .remove() method.
+
+```
+list1 = [1, 2, "a", { "a": 3 }, 4]
+
+del list1[-2]
+list1.remove(2)
+
+print(list1) # [1, "a", 4]
+```
+
+### Basic List Operations
+```
+print(len("a", "b", 3)) # 3
+print([1, 2, 3] + [4, 5, 6]) # [1, 2, 3, 4, 5, 6]
+print(["a"] * 5) # ["a", "a", "a", "a", "a"]
+print(5 in [3, 5, 8]) # True
+for i in [1, 2, 3]: print(i) # 1, 2, 3
+```
