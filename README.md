@@ -138,3 +138,46 @@ print(["a"] * 5) # ["a", "a", "a", "a", "a"]
 print(5 in [3, 5, 8]) # True
 for i in [1, 2, 3]: print(i) # 1, 2, 3
 ```
+
+## Tuples
+A tuple is a sequence of immutable Python objects, just like lists. The differences between tuples and list are that elements of a list can be modified while that of a tuple cannot; Lists use [] while tuples use () or comma-separated values without ().
+
+```
+tup1 = (1, 2, 3)
+tup2 = "a", "b", 6
+tup3 = 5,
+
+# both tup1, tup2 and tup3 all valid tuples.
+```
+
+### Accesing Values
+Just like lists and arrays, elements in a tuple can be accessed by using the index.
+
+```
+tup = (1, 2, 3, 4, 5)
+
+print("tup[2]", tup[2]) # 3
+```
+
+### Updating Values
+Recall; elements in a tuple cannot be modified, which is why it is called `immutable`.
+
+```
+tup = (1, 2, 3)
+
+tup[0] = 10 # error
+```
+
+### Deleting Elements
+Tuples do not support item modification and deleting elements is an example of item modification.
+
+### Basic Operations
+Tuples work like lists so therefore they perform similar operations
+
+```
+print(len((1, 2, 3))) # 3
+print((1, 2, 3) + (4, 5, 6)) # (1, 2, 3, 4, 5, 6)
+print(("Hi",) * 4) # ("Hi", "Hi", "Hi", "Hi")
+print(3 in (1, 2, 3)) # True
+for i in (1, 2, 3): print(i) # 1, 2, 3
+```
