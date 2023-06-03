@@ -181,3 +181,44 @@ print(("Hi",) * 4) # ("Hi", "Hi", "Hi", "Hi")
 print(3 in (1, 2, 3)) # True
 for i in (1, 2, 3): print(i) # 1, 2, 3
 ```
+
+## Dictionaries
+A dictionary is a data structure that holds data in key-value pair,just like the standard English dictionary. It does not allow duplicate keys and values can be nested or straight.
+
+### Accessing Values
+To access values in a dictionary, the dictionary object is called and references the key like an array index.
+```
+d = {"a": 1, "b": 2, "c": 3}
+
+print(d["a"]) # 1
+print(d["c"]) # 3
+```
+
+### Updating Dictionary
+A dictionary canbe updated using various methods.
+
+```
+d = {"a": 1, "b": 2, "c": 3}
+
+d["b"] = 5
+d["d"] = 6
+
+print(d) # {"a": 1, "b": 5, "c": 3, "d": 6}
+
+d.update({"e": 0})
+```
+
+### Deleting Elements
+Keys can be deleted by using the del statement or the .clear() method of a dictionary.
+
+```
+d = {"a": 1, "b": 2, "c": 3}
+
+del d["a"]
+
+print(d) # {"b": 2, "c": 3}
+
+d.clear()
+
+print(d) # {}
+```
