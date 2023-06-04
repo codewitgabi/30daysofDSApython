@@ -222,3 +222,67 @@ d.clear()
 
 print(d) # {}
 ```
+
+## 2D-Array
+A two dimensional(2D) array is simply an array in an array. It must be in this format => [[]]. __[[], 2]__ is not a valid 2D-Array.
+
+### Accessing Elements
+Elements in a 2D-Array can be accessed by using the index of the elements just like regular arrays. 
+
+```
+arr = [
+    [1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+]
+
+print(arr[0]) # [1, 2]
+# Since arr[0] returns an array, we can also get an element bu indexing it.
+
+print(arr[0][1]) # 2
+```
+
+### Inserting Elements
+Elements can be inserted using the .insert() method.
+
+```
+arr = [
+    [1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+]
+
+arr.insert(2, [0] * 3)
+print(arr[2]) # [0, 0, 0]
+```
+
+### Updating 2D-Array
+Updating a 2D-Array is done same way a regular array is done.
+
+```
+arr = [
+    [1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+]
+
+arr[0] = [1, 6, 8, 0]
+
+print(arr[0]) # [1, 6, 8, 0]
+```
+
+### Deleting Elements
+Similarly, elements can be deleted same way it is done in a regular array; by using the del statement or .remove() method.
+
+```
+arr = [
+    [1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+]
+
+del arr[2]
+arr.remove([1, 2])
+
+print(arr) # [[ 3, 4, 5 ]]
+```
