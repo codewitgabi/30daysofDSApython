@@ -10,20 +10,19 @@ class Stack:
     :peek -> Shows the last element in the stack.
     """
     def __init__(self):
-        self.stack = []
+        self.__stack = []
 
     def push(self, data):
-        self.stack.append(data)
+        self.__stack.append(data)
 
     def pop(self):
-        if len(self.stack) > 0:
-            last_elem = self.stack[-1]
-            self.stack.remove(last_elem)
+        if len(self.__stack) > 0:
+            self.__stack.pop()
 
     def peek(self):
-        return self.stack[-1] if len(self.stack) > 0 else None
+        return self.__stack[-1] if len(self.__stack) > 0 else None
 
     def __repr__(self):
-        return str(self.stack)
+        return str(self.__stack)
 
 
